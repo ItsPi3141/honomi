@@ -1,5 +1,5 @@
 <picture>
-  <img src="./.readme/readme-1.svg" width="100%" height="225px" />
+  <img src="./.readme/readme-1.svg" width="100%" height="280px" />
 </picture>
 <a href="https://genshin.hoyoverse.com"><img src="./.readme/readme-2-1.svg" width="49%" height="51px" /></a>
 <a href="https://hsr.hoyoverse.com"><img src="./.readme/readme-2-2.svg" width="49%" height="51px" /></a>
