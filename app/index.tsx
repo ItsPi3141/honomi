@@ -116,6 +116,8 @@ export default function Index() {
 					keyExtractor={(item, index) =>
 						`${item.type === ItemType.CODE ? item.code : item.title}_${index}`
 					}
+					showsVerticalScrollIndicator={false}
+					showsHorizontalScrollIndicator={false}
 				/>
 			</View>
 		</ApiContext.Provider>
