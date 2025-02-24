@@ -23,6 +23,18 @@ export interface RedeemCodeCategory {
 	title: string;
 }
 
+export interface AllGames {
+	genshin: RedeemCodesCollection;
+	hsr: RedeemCodesCollection;
+	zzz: RedeemCodesCollection;
+	wuwa: RedeemCodesCollection;
+}
+export interface AllGamesRaw {
+	genshin: RedeemCodesCollectionJson;
+	hsr: RedeemCodesCollectionJson;
+	zzz: RedeemCodesCollectionJson;
+	wuwa: RedeemCodesCollectionJson;
+}
 export interface RedeemCodesCollection {
 	valid: RedeemCodeItem[];
 	expired: RedeemCodeItem[];
