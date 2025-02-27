@@ -4,6 +4,23 @@
 		"s": ".png/revision/latest/scale-to-width-down/32",
 		"v": [
 			{
+				"c": "POKAPOKAGENSHIN",
+				"r": [
+					{
+						"i": "6/6d/Item_Sea_Ganoderma",
+						"n": 5
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 3
+					},
+					{
+						"i": "7/71/Item_Kageuchi_Handguard",
+						"n": 5
+					}
+				]
+			},
+			{
 				"c": "RB5PPN4BV355",
 				"r": [
 					{
@@ -56,23 +73,6 @@
 					{
 						"i": "2/26/Item_Hero%27s_Wit",
 						"n": 3
-					}
-				]
-			},
-			{
-				"c": "POKAPOKAGENSHIN",
-				"r": [
-					{
-						"i": "6/6d/Item_Sea_Ganoderma",
-						"n": 5
-					},
-					{
-						"i": "2/26/Item_Hero%27s_Wit",
-						"n": 3
-					},
-					{
-						"i": "7/71/Item_Kageuchi_Handguard",
-						"n": 5
 					}
 				]
 			}
