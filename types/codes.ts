@@ -1,10 +1,4 @@
-export enum ItemType {
-	CODE = 0,
-	CATEGORY = 1,
-}
-
 export interface RedeemCodeItem {
-	type: ItemType.CODE;
 	code: string;
 	rewards: {
 		image: string;
@@ -19,7 +13,6 @@ export interface RedeemCodeItemJson {
 	}[];
 }
 export interface RedeemCodeCategory {
-	type: ItemType.CATEGORY;
 	title: string;
 }
 

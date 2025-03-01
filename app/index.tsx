@@ -1,17 +1,15 @@
-import {
-	ItemType,
-	type RedeemCodeItem,
-	type RedeemCodeCategory,
-	type AllGames,
-	type RedeemCodeItemJson,
-	type AllGamesRaw,
+import type {
+	RedeemCodeItem,
+	AllGames,
+	RedeemCodeItemJson,
+	AllGamesRaw,
 } from "@/types/codes";
 
 import { ThemedButton } from "@/components/ThemedButton";
 import { ThemedText } from "@/components/ThemedText";
 import { useTheme } from "@/hooks/useThemeColor";
 import { useEffect, useState } from "react";
-import { FlatList, Image, Linking, SectionList, View } from "react-native";
+import { Image, Linking, SectionList, View } from "react-native";
 
 import * as WebBrowser from "expo-web-browser";
 import { ApiContext } from "@/contexts/apiContext";
@@ -50,7 +48,6 @@ export default function Index() {
 					const game = _game as keyof typeof raw;
 					processed[game] = {
 						valid: raw[game].v.map((item: RedeemCodeItemJson) => ({
-							type: ItemType.CODE,
 							code: item.c,
 							rewards: item.r.map((reward) => ({
 								image: `${raw[game].p}${reward.i}${raw[game].s}`,
@@ -58,7 +55,6 @@ export default function Index() {
 							})),
 						})),
 						expired: raw[game].e.map((item: RedeemCodeItemJson) => ({
-							type: ItemType.CODE,
 							code: item.c,
 							rewards: item.r.map((reward) => ({
 								image: `${raw[game].p}${reward.i}${raw[game].s}`,
