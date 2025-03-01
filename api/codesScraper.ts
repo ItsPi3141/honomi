@@ -4,6 +4,7 @@ import type {
 	RedeemCodesCollectionJson,
 	RedeemCodeItemJson,
 	RedeemCodesCollectionRawJson,
+	AllGames,
 } from "@/types/codes";
 import { JSDOM } from "jsdom";
 import lzString from "lz-string";
@@ -115,11 +116,11 @@ export const scraper = async () => {
 	const dataPath = path.resolve("./api/codes.json");
 	if (!fs.existsSync(dataPath)) fs.writeFileSync(dataPath, "{}");
 	const data: {
-		[game in keyof typeof scrapedData]: RedeemCodesCollectionJson;
+		[game in keyof AllGames]: RedeemCodesCollectionJson;
 	} = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
 
 	for (const _game in scrapedData) {
-		const game = _game as keyof typeof scrapedData;
+		const game = _game as keyof AllGames;
 
 		const [newData, hasNewCodes] = codesResolver(
 			scrapedData[game].v,

@@ -42,3 +42,9 @@ export interface RedeemCodesCollectionRawJson {
 	v: RedeemCodeItemJson[];
 	e: RedeemCodeItemJson[];
 }
+
+export interface GameImages {
+	icon: string;
+	banner: string;
+	color: number;
+}

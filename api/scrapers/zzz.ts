@@ -2,7 +2,7 @@ import type {
 	RedeemCodeItemJson,
 	RedeemCodesCollectionRawJson,
 } from "@/types/codes";
-import { wikiaAssetProcessor, genericScraper } from "../scraper";
+import { wikiaAssetProcessor, genericScraper } from "../codesScraper";
 
 export const zzzScraper = async (): Promise<RedeemCodesCollectionRawJson> => {
 	const handler = (document: Document): RedeemCodesCollectionRawJson => {

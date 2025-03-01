@@ -11,7 +11,8 @@
 		"web": "expo start --web",
 		"test": "jest --watchAll",
 		"lint": "expo lint",
-		"scrape": "tsx ./api/scraper.ts"
+		"scrape-codes": "tsx ./api/codeScraper.ts",
+		"scrape-assets": "tsx ./api/gameAssetsScraper.ts"
 	},
 	"jest": {
 		"preset": "jest-expo"

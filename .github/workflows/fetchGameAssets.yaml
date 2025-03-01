@@ -1,8 +1,8 @@
-name: "Fetch Codes"
+name: "Fetch Game Assets"
 
 on:
   schedule:
-    - cron: "0 0/6 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -40,15 +40,15 @@ jobs:
         run: |
           yarn install
 
-      - name: Fetch codes
+      - name: Fetch game assets
         run: |
-          yarn scrape-codes
+          yarn scrape-assets
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: |
-            Update redeem codes
+            Update game image assets
 
 
             Co-authored-by: ItsPi3141 <90981829+ItsPi3141@users.noreply.github.com>
