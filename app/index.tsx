@@ -107,11 +107,7 @@ export default function Index() {
 						item,
 						index,
 					}: { item: RedeemCodeItem; index: number }) => (
-						<RedeemCode
-							item={item}
-							index={index}
-							handleOpen={(e) => openRedeemPage(e)}
-						/>
+						<RedeemCode item={item} handleOpen={(e) => openRedeemPage(e)} />
 					)}
 					renderSectionHeader={({ section }) => (
 						<ThemedText
@@ -136,11 +132,9 @@ export default function Index() {
 
 function RedeemCode({
 	item,
-	index,
 	handleOpen,
 }: {
 	item: RedeemCodeItem;
-	index: number;
 	handleOpen: (code: string) => void;
 }) {
 	const theme = useTheme();
