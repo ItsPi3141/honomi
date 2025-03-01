@@ -9,32 +9,10 @@ export default function RootLayout() {
 		<>
 			<Stack
 				screenOptions={{
-					header: () => <Header />,
+					header: () => null,
 				}}
 			/>
 			<ExpoStatusBar style="auto" />
 		</>
-	);
-}
-
-function Header() {
-	const theme = useTheme();
-	const headerPadding = 10;
-
-	return (
-		<View
-			style={{
-				alignItems: "center",
-				padding: headerPadding,
-				paddingTop: (StatusBar.currentHeight ?? 36) + headerPadding,
-				backgroundColor: theme.background,
-				borderBottomColor: theme.surface,
-				borderBottomWidth: 1,
-			}}
-		>
-			<ThemedText style={{ fontWeight: "bold", fontSize: 16 }}>
-				Honomi
-			</ThemedText>
-		</View>
 	);
 }

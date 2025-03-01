@@ -9,7 +9,16 @@ import { ThemedButton } from "@/components/ThemedButton";
 import { ThemedText } from "@/components/ThemedText";
 import { useTheme } from "@/hooks/useThemeColor";
 import { useEffect, useState } from "react";
-import { Image, Linking, SectionList, View } from "react-native";
+import {
+	Dimensions,
+	Image,
+	Linking,
+	SectionList,
+	StatusBar,
+	View,
+} from "react-native";
+import Svg, { Defs, LinearGradient, Path, Stop } from "react-native-svg";
+import MaskedView from "@react-native-masked-view/masked-view";
 
 import * as WebBrowser from "expo-web-browser";
 import { ApiContext } from "@/contexts/apiContext";
@@ -19,6 +28,8 @@ type DataItem = {
 	title: string;
 	data: RedeemCodeItem[];
 };
+
+const headerHeight = 72;
 
 const openRedeemPage = async (code: string) => {
 	const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
@@ -90,6 +101,7 @@ export default function Index() {
 					paddingTop: 0,
 				}}
 			>
+				<Header />
 				<SectionList
 					sections={
 						[
@@ -115,7 +127,9 @@ export default function Index() {
 								fontWeight: "bold",
 								fontSize: 16,
 								paddingVertical: 12,
-								marginTop: section.key?.endsWith("0") ? 16 : 0,
+								marginTop: section.title.includes("Valid")
+									? headerHeight + 24 + 16
+									: 0,
 							}}
 						>
 							{section.title}
@@ -211,5 +225,66 @@ function RedeemCode({
 				</ThemedButton>
 			</View>
 		</View>
+	);
+}
+
+let windowWidth = Dimensions.get("window").width;
+Dimensions.addEventListener("change", ({ window }) => {
+	windowWidth = window.width;
+	headerMask = createHeaderMask();
+});
+const headerBorderRadius = 24;
+const statusBarHeight = StatusBar.currentHeight ?? 36;
+const height = statusBarHeight + headerHeight;
+const createHeaderMask = () => (
+	<Svg
+		preserveAspectRatio="none"
+		height="100%"
+		width="100%"
+		viewBox={`0 0 ${windowWidth} ${height + headerBorderRadius}`}
+	>
+		<Path
+			d={`M0 0 L${windowWidth} 0 L${windowWidth} ${
+				height + headerBorderRadius
+			} Q${windowWidth} ${height}, ${
+				windowWidth - headerBorderRadius
+			} ${height} L${headerBorderRadius} ${height} Q0 ${height}, 0 ${
+				height + headerBorderRadius
+			} Z`}
+			fill="black"
+		/>
+	</Svg>
+);
+let headerMask = createHeaderMask();
+
+function Header() {
+	const theme = useTheme();
+
+	return (
+		<MaskedView
+			style={[
+				{
+					position: "absolute",
+					top: 0,
+					left: 0,
+					right: 0,
+					zIndex: 100,
+					backgroundColor: theme.surface,
+					padding: 16,
+					paddingTop: 32,
+
+					flex: 1,
+					gap: 8,
+					justifyContent: "center",
+				},
+				{ width: windowWidth },
+				{ height: height + headerBorderRadius },
+			]}
+			maskElement={headerMask}
+		>
+			<ThemedText style={{ fontWeight: "bold", fontSize: 20 }}>
+				Genshin Impact
+			</ThemedText>
+		</MaskedView>
 	);
 }
