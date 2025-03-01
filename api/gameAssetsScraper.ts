@@ -30,6 +30,7 @@ const hyvScraper = async (): Promise<Record<string, GameImages>> => {
 		[game in keyof AllGames]?: GameImages;
 	} = {};
 	for (const gameData of scrapedData.data.game_list) {
+		if (!idMap[gameData.id]) continue;
 		images[idMap[gameData.id]] = {
 			banner: gameData.bg,
 			icon: `${gameData.icon}?x-oss-process=image/resize,w_128`,
