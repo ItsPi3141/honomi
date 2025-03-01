@@ -32,7 +32,7 @@ const hyvScraper = async (): Promise<Record<string, GameImages>> => {
 	for (const gameData of scrapedData.data.game_list) {
 		images[idMap[gameData.id]] = {
 			banner: gameData.bg,
-			icon: `${gameData.icon}/resize,w_128`,
+			icon: `${gameData.icon}?x-oss-process=image/resize,w_128`,
 			color: Number.parseInt(gameData.bg_color.replace("#", ""), 16),
 		};
 	}
