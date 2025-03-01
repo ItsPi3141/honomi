@@ -55,4 +55,7 @@ const wuwaScraper = (): Record<string, GameImages> => {
 };
 Object.assign(data, wuwaScraper());
 
-fs.writeFileSync(dataPath, JSON.stringify(data));
+fs.writeFileSync(
+	dataPath,
+	JSON.stringify(data, null, 2).replaceAll("  ", "	"),
+);
