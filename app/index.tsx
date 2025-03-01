@@ -2,22 +2,25 @@ import {
 	ItemType,
 	type RedeemCodeItem,
 	type RedeemCodeCategory,
-	AllGames,
-	RedeemCodeItemJson,
-	AllGamesRaw,
+	type AllGames,
+	type RedeemCodeItemJson,
+	type AllGamesRaw,
 } from "@/types/codes";
 
 import { ThemedButton } from "@/components/ThemedButton";
 import { ThemedText } from "@/components/ThemedText";
 import { useTheme } from "@/hooks/useThemeColor";
 import { useEffect, useState } from "react";
-import { FlatList, Image, Linking, View } from "react-native";
+import { FlatList, Image, Linking, SectionList, View } from "react-native";
 
 import * as WebBrowser from "expo-web-browser";
 import { ApiContext } from "@/contexts/apiContext";
 import { decompressFromUint8Array } from "lz-string";
 
-type DataItem = RedeemCodeItem | RedeemCodeCategory;
+type DataItem = {
+	title: string;
+	data: RedeemCodeItem[];
+};
 
 const openRedeemPage = async (code: string) => {
 	const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
@@ -91,31 +94,42 @@ export default function Index() {
 					paddingTop: 0,
 				}}
 			>
-				<FlatList
-					data={
+				<SectionList
+					sections={
 						[
 							{
-								type: ItemType.CATEGORY,
 								title: "Valid Codes",
+								data: apiData?.genshin.valid ?? [],
 							},
-							...(apiData?.genshin.valid ?? []),
 							{
-								type: ItemType.CATEGORY,
 								title: "Expired Codes",
+								data: apiData?.genshin.expired ?? [],
 							},
-							...(apiData?.genshin.expired ?? []),
 						] as DataItem[]
 					}
-					renderItem={({ item, index }: { item: DataItem; index: number }) => (
+					renderItem={({
+						item,
+						index,
+					}: { item: RedeemCodeItem; index: number }) => (
 						<RedeemCode
 							item={item}
 							index={index}
 							handleOpen={(e) => openRedeemPage(e)}
 						/>
 					)}
-					keyExtractor={(item, index) =>
-						`${item.type === ItemType.CODE ? item.code : item.title}_${index}`
-					}
+					renderSectionHeader={({ section }) => (
+						<ThemedText
+							style={{
+								fontWeight: "bold",
+								fontSize: 16,
+								paddingVertical: 12,
+								marginTop: section.key?.endsWith("0") ? 16 : 0,
+							}}
+						>
+							{section.title}
+						</ThemedText>
+					)}
+					keyExtractor={(item, index) => `${item}_${index}`}
 					showsVerticalScrollIndicator={false}
 					showsHorizontalScrollIndicator={false}
 				/>
@@ -129,13 +143,13 @@ function RedeemCode({
 	index,
 	handleOpen,
 }: {
-	item: DataItem;
+	item: RedeemCodeItem;
 	index: number;
 	handleOpen: (code: string) => void;
 }) {
 	const theme = useTheme();
 
-	return item.type === ItemType.CODE ? (
+	return (
 		<View
 			style={{
 				flex: 1,
@@ -207,16 +221,5 @@ function RedeemCode({
 				</ThemedButton>
 			</View>
 		</View>
-	) : (
-		<ThemedText
-			style={{
-				fontWeight: "bold",
-				fontSize: 16,
-				paddingVertical: 12,
-				marginTop: index === 0 ? 16 : 0,
-			}}
-		>
-			{item.title}
-		</ThemedText>
 	);
 }
