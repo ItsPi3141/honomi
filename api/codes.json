@@ -75,6 +75,60 @@
 						"n": 3
 					}
 				]
+			},
+			{
+				"c": "XA4N66LAC349",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 20000
+					},
+					{
+						"i": "6/6a/Item_Fruit-Flavored_Milk_Candies",
+						"n": 2
+					},
+					{
+						"i": "e/e5/Item_Dreams_of_Healing",
+						"n": 2
+					},
+					{
+						"i": "0/06/Item_Impeccably_Organized",
+						"n": 2
+					}
+				]
+			},
+			{
+				"c": "7B476N4TDJ6V",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 20000
+					},
+					{
+						"i": "1/17/Item_Crepes_Suzette",
+						"n": 1
+					},
+					{
+						"i": "1/16/Item_Cold_Cut_Platter",
+						"n": 1
+					},
+					{
+						"i": "2/25/Item_Tea_Break_Pancake",
+						"n": 1
+					},
+					{
+						"i": "1/15/Item_Matsutake_Meat_Rolls",
+						"n": 1
+					},
+					{
+						"i": "2/2f/Item_Sparkling_Berry_Juice",
+						"n": 1
+					},
+					{
+						"i": "2/20/Item_Teyvat_Fried_Egg",
+						"n": 2
+					}
+				]
 			}
 		],
 		"e": [
