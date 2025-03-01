@@ -14,11 +14,6 @@
 		"icon": "https://hyl-static-res-prod.hoyolab.com/communityweb/business/nap.png?x-oss-process=image/resize,w_128",
 		"color": 16119547
 	},
-	"undefined": {
-		"banner": "https://upload-os-bbs.hoyolab.com/upload/2024/09/13/de9feee60d10329f5a823d2822811285_6381235369530729476.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,webp/quality,q_70",
-		"icon": "https://hyl-static-res-prod.hoyolab.com/communityWeb/pgc/business/hyl_icon.png?x-oss-process=image/resize,w_128",
-		"color": 6406642
-	},
 	"wuwa": {
 		"banner": "https://static.wikia.nocookie.net/wutheringwaves/images/0/08/Site-background-dark/revision/latest/scale-to-width-down/900",
 		"icon": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4a/Site-favicon.ico/revision/latest/scale-to-width-down/128",
