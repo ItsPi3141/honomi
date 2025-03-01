@@ -20,9 +20,12 @@ import {
 import Svg, { Defs, LinearGradient, Path, Stop } from "react-native-svg";
 import MaskedView from "@react-native-masked-view/masked-view";
 
+import { MMKV, useMMKVString } from "react-native-mmkv";
+
 import * as WebBrowser from "expo-web-browser";
 import { ApiContext } from "@/contexts/apiContext";
 import { decompressFromUint8Array } from "lz-string";
+import { gameDisplayName, redeemCodesPage } from "@/constants/Constants";
 
 type DataItem = {
 	title: string;
@@ -82,11 +85,19 @@ export default function Index() {
 	useEffect(() => {
 		(async () => {
 			await WebBrowser.warmUpAsync();
-			await WebBrowser.mayInitWithUrlAsync(
-				"https://genshin.hoyoverse.com/en/gift",
-			);
 		})();
 	}, []);
+	const [selectedGame, setSelectedGame] = useMMKVString("selected-game") as [
+		keyof AllGames,
+		(value: keyof AllGames) => void,
+	];
+	useEffect(() => {
+		async () => {
+			const g = selectedGame ?? "genshin";
+			if (!redeemCodesPage[g]) return;
+			await WebBrowser.mayInitWithUrlAsync(redeemCodesPage[g]);
+		};
+	}, [selectedGame]);
 
 	return (
 		<ApiContext.Provider value={apiData}>
@@ -260,6 +271,11 @@ let headerMask = createHeaderMask();
 function Header() {
 	const theme = useTheme();
 
+	const [selectedGame, setSelectedGame] = useMMKVString("selected-game") as [
+		keyof AllGames,
+		(value: keyof AllGames) => void,
+	];
+
 	return (
 		<MaskedView
 			style={[
@@ -283,7 +299,7 @@ function Header() {
 			maskElement={headerMask}
 		>
 			<ThemedText style={{ fontWeight: "bold", fontSize: 20 }}>
-				Genshin Impact
+				{gameDisplayName[selectedGame ?? "genshin"]}
 			</ThemedText>
 		</MaskedView>
 	);
