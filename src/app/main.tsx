@@ -210,7 +210,7 @@ const RedeemCode = memo(
 						}}
 					>
 						{item.rewards.map((reward) => (
-							<Fragment key={reward.image}>
+							<View key={reward.image} style={{ flexDirection: "row" }}>
 								<Image
 									source={{
 										uri: reward.image,
@@ -219,7 +219,7 @@ const RedeemCode = memo(
 									}}
 								/>
 								<ThemedText>{reward.count}</ThemedText>
-							</Fragment>
+							</View>
 						))}
 					</View>
 				</View>
