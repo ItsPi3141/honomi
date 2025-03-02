@@ -36,7 +36,7 @@ Dimensions.addEventListener("change", ({ window }) => {
 const headerBorderRadius = 24;
 const headerHeight = 72;
 
-const defaultGame = "genshin";
+const defaultGame = "wuwa";
 
 const openRedeemPage = async (code: string) => {
 	const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
@@ -320,6 +320,7 @@ function Header() {
 							style={{
 								position: "absolute",
 								top: -16,
+								opacity: (selectedGame ?? defaultGame) === "wuwa" ? 0.5 : 1,
 							}}
 						/>
 					</View>
@@ -328,14 +329,31 @@ function Header() {
 				<View
 					style={{
 						zIndex: 2,
+						position: "absolute",
+						top: 0,
+						left: 0,
+						right: 0,
+						bottom: 0,
+
 						padding: 16,
 						paddingTop: 32,
 
-						flex: 1,
-						gap: 8,
-						justifyContent: "center",
+						display: "flex",
+						flexDirection: "row",
+						gap: 16,
+						alignItems: "center",
 					}}
 				>
+					{apiImagesData?.[selectedGame ?? defaultGame]?.icon && (
+						<Image
+							source={{
+								uri: apiImagesData?.[selectedGame ?? defaultGame]?.icon,
+								width: 40,
+								height: 40,
+							}}
+							borderRadius={8}
+						/>
+					)}
 					<ThemedText style={{ fontWeight: "bold", fontSize: 20 }}>
 						{gameDisplayName[selectedGame ?? defaultGame]}
 					</ThemedText>
