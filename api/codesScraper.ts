@@ -21,7 +21,7 @@ const imagePrefixes = {
 	zzz: "https://static.wikia.nocookie.net/zenless-zone-zero/images/",
 	wuwa: "https://static.wikia.nocookie.net/wutheringwaves/images",
 };
-const imageSuffix = ".png/revision/latest/scale-to-width-down/32";
+const imageSuffix = ".png/revision/latest/scale-to-width-down/20";
 
 export const genericScraper = async (
 	url: string,
