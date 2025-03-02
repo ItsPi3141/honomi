@@ -10,7 +10,14 @@ import { ThemedButton } from "../components/ThemedButton";
 import { ThemedText } from "../components/ThemedText";
 import { useTheme } from "../hooks/useThemeColor";
 
-import { memo, useCallback, useContext, useEffect, useState } from "react";
+import {
+	Fragment,
+	memo,
+	useCallback,
+	useContext,
+	useEffect,
+	useState,
+} from "react";
 import {
 	Dimensions,
 	Image,
@@ -138,10 +145,7 @@ export default function MainPage() {
 							},
 						] as DataItem[]
 					}
-					renderItem={({
-						item,
-						index,
-					}: { item: RedeemCodeItem; index: number }) => (
+					renderItem={({ item }: { item: RedeemCodeItem; index: number }) => (
 						<RedeemCode item={item} handleOpen={(e) => openRedeemPage(e)} />
 					)}
 					renderSectionHeader={({ section }) => (
@@ -205,14 +209,7 @@ const RedeemCode = memo(
 						}}
 					>
 						{item.rewards.map((reward) => (
-							<View
-								key={reward.image}
-								style={{
-									flex: 0,
-									flexDirection: "row",
-									alignItems: "center",
-								}}
-							>
+							<Fragment key={reward.image}>
 								<Image
 									source={{
 										uri: reward.image,
@@ -221,15 +218,14 @@ const RedeemCode = memo(
 									}}
 								/>
 								<ThemedText>{reward.count}</ThemedText>
-							</View>
+							</Fragment>
 						))}
 					</View>
 				</View>
 
 				<View
 					style={{
-						flexGrow: 1,
-						minWidth: 48,
+						width: 48,
 					}}
 				/>
 
