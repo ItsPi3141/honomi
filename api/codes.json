@@ -1,7 +1,7 @@
 {
 	"genshin": {
 		"p": "https://static.wikia.nocookie.net/gensin-impact/images/",
-		"s": ".png/revision/latest/scale-to-width-down/32",
+		"s": ".png/revision/latest/scale-to-width-down/20",
 		"v": [
 			{
 				"c": "POKAPOKAGENSHIN",
@@ -5002,7 +5002,7 @@
 	},
 	"hsr": {
 		"p": "https://static.wikia.nocookie.net/houkai-star-rail/images/",
-		"s": ".png/revision/latest/scale-to-width-down/32",
+		"s": ".png/revision/latest/scale-to-width-down/20",
 		"v": [
 			{
 				"c": "HSRINGAMESTOP",
@@ -7636,7 +7636,7 @@
 	},
 	"zzz": {
 		"p": "https://static.wikia.nocookie.net/zenless-zone-zero/images/",
-		"s": ".png/revision/latest/scale-to-width-down/32",
+		"s": ".png/revision/latest/scale-to-width-down/20",
 		"v": [
 			{
 				"c": "ZZZ15MOLLO",
@@ -7708,6 +7708,27 @@
 					{
 						"i": "1/1b/Item_Bangboo_Algorithm_Module",
 						"n": 1
+					}
+				]
+			},
+			{
+				"c": "SOLDIER0ANBY",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 300
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "1/1c/Item_Senior_Investigator_Log",
+						"n": 2
+					},
+					{
+						"i": "5/54/Item_W-Engine_Energy_Module",
+						"n": 3
 					}
 				]
 			}
@@ -8082,7 +8103,7 @@
 	},
 	"wuwa": {
 		"p": "https://static.wikia.nocookie.net/wutheringwaves/images",
-		"s": ".png/revision/latest/scale-to-width-down/32",
+		"s": ".png/revision/latest/scale-to-width-down/20",
 		"v": [
 			{
 				"c": "TREASUREHUNT",
