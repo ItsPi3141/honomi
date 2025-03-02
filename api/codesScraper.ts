@@ -5,7 +5,7 @@ import type {
 	RedeemCodeItemJson,
 	RedeemCodesCollectionRawJson,
 	AllGames,
-} from "@/types/codes";
+} from "../src/types/codes";
 import { JSDOM } from "jsdom";
 import lzString from "lz-string";
 const { compressToUint8Array: compress } = lzString;

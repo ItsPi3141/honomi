@@ -1,50 +1,50 @@
-export interface RedeemCodeItem {
+export type RedeemCodeItem = {
 	code: string;
 	rewards: {
 		image: string;
 		count: number;
 	}[];
-}
-export interface RedeemCodeItemJson {
+};
+export type RedeemCodeItemJson = {
 	c: string;
 	r: {
 		i: string;
 		n: number;
 	}[];
-}
-export interface RedeemCodeCategory {
+};
+export type RedeemCodeCategory = {
 	title: string;
-}
+};
 
-export interface AllGames {
+export type AllGames = {
 	genshin: RedeemCodesCollection;
 	hsr: RedeemCodesCollection;
 	zzz: RedeemCodesCollection;
 	wuwa: RedeemCodesCollection;
-}
-export interface AllGamesRaw {
-	genshin: RedeemCodesCollectionJson;
-	hsr: RedeemCodesCollectionJson;
-	zzz: RedeemCodesCollectionJson;
-	wuwa: RedeemCodesCollectionJson;
-}
-export interface RedeemCodesCollection {
+};
+export type AllGamesRaw = {
+	[game in keyof AllGames]: RedeemCodesCollectionJson;
+};
+export type RedeemCodesCollection = {
 	valid: RedeemCodeItem[];
 	expired: RedeemCodeItem[];
-}
-export interface RedeemCodesCollectionJson {
+};
+export type RedeemCodesCollectionJson = {
 	p: string;
 	s: string;
 	v: RedeemCodeItemJson[];
 	e: RedeemCodeItemJson[];
-}
-export interface RedeemCodesCollectionRawJson {
+};
+export type RedeemCodesCollectionRawJson = {
 	v: RedeemCodeItemJson[];
 	e: RedeemCodeItemJson[];
-}
+};
 
-export interface GameImages {
+export type GameImages = {
 	icon: string;
 	banner: string;
 	color: number;
-}
+};
+export type AllGamesImages = {
+	[game in keyof AllGames]: GameImages;
+};
