@@ -36,7 +36,7 @@ Dimensions.addEventListener("change", ({ window }) => {
 const headerBorderRadius = 24;
 const headerHeight = 72;
 
-const defaultGame = "wuwa";
+const defaultGame = "genshin";
 
 const openRedeemPage = async (code: string) => {
 	const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
@@ -114,11 +114,11 @@ export default function MainPage() {
 						[
 							{
 								title: "Valid Codes",
-								data: apiData?.genshin?.valid ?? [],
+								data: apiData?.[selectedGame ?? defaultGame]?.valid ?? [],
 							},
 							{
 								title: "Expired Codes",
-								data: apiData?.genshin?.expired ?? [],
+								data: apiData?.[selectedGame ?? defaultGame]?.expired ?? [],
 							},
 						] as DataItem[]
 					}
