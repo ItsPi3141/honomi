@@ -10,7 +10,7 @@ import { ThemedButton } from "../components/ThemedButton";
 import { ThemedText } from "../components/ThemedText";
 import { useTheme } from "../hooks/useThemeColor";
 
-import { memo, useContext, useEffect, useState } from "react";
+import { memo, useCallback, useContext, useEffect, useState } from "react";
 import {
 	Dimensions,
 	Image,
@@ -54,17 +54,17 @@ const headerHeight = 72;
 
 const defaultGame = "genshin";
 
-const openRedeemPage = async (code: string) => {
-	const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
-	try {
-		openBrowser(url, {});
-	} catch {
-		Linking.openURL(url);
-	}
-};
-
 export default function MainPage() {
 	const theme = useTheme();
+
+	const openRedeemPage = useCallback(async (code: string) => {
+		const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
+		try {
+			openBrowser(url, {});
+		} catch {
+			Linking.openURL(url);
+		}
+	}, []);
 
 	const [apiData, setApiData] = useState<AllGames | null>(null);
 	useEffect(() => {
