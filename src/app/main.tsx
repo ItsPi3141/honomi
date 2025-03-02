@@ -11,7 +11,14 @@ import { ThemedText } from "../components/ThemedText";
 import { useTheme } from "../hooks/useThemeColor";
 
 import { memo, useContext, useEffect, useState } from "react";
-import { Dimensions, Image, Linking, SectionList, View } from "react-native";
+import {
+	Dimensions,
+	Image,
+	Linking,
+	Pressable,
+	SectionList,
+	View,
+} from "react-native";
 import Svg, { Path } from "react-native-svg";
 import MaskedView from "@react-native-masked-view/masked-view";
 import AutoHeightImage from "react-native-auto-height-image";
@@ -23,6 +30,15 @@ import { ApiContext, ApiImagesContext } from "../contexts/apiContext";
 import { decompressFromUint8Array } from "lz-string";
 import { gameDisplayName, redeemCodesPage } from "../constants/Constants";
 import { useStatusBarHeight } from "../hooks/useStatusBarHeight";
+import { Icons } from "../components/Icons";
+import { Portal } from "@gorhom/portal";
+import { Overlay } from "../components/Overlay";
+import Animated, {
+	FadeIn,
+	FadeOut,
+	LinearTransition,
+} from "react-native-reanimated";
+import { Accordion } from "../constants/Animations";
 
 type DataItem = {
 	title: string;
@@ -238,10 +254,7 @@ const RedeemCode = memo(
 
 function Header() {
 	const theme = useTheme();
-
 	const height = useStatusBarHeight() + headerHeight;
-
-	const apiData = useContext(ApiContext);
 
 	const [apiImagesData, setApiImagesData] = useState<AllGamesImages | null>(
 		null,
@@ -260,6 +273,8 @@ function Header() {
 		keyof AllGames,
 		(value: keyof AllGames) => void,
 	];
+
+	const [dropdownVisible, setDropdownVisible] = useState(false);
 
 	return (
 		<ApiImagesContext.Provider value={apiImagesData}>
@@ -329,7 +344,7 @@ function Header() {
 					</View>
 				)}
 
-				<View
+				<Pressable
 					style={{
 						zIndex: 2,
 						position: "absolute",
@@ -343,9 +358,10 @@ function Header() {
 
 						display: "flex",
 						flexDirection: "row",
-						gap: 16,
+						gap: 8,
 						alignItems: "center",
 					}}
+					onPress={() => setDropdownVisible(true)}
 				>
 					{apiImagesData?.[selectedGame ?? defaultGame]?.icon && (
 						<Image
@@ -357,11 +373,142 @@ function Header() {
 							borderRadius={8}
 						/>
 					)}
-					<ThemedText style={{ fontWeight: "bold", fontSize: 20 }}>
+					<ThemedText
+						style={{ fontWeight: "bold", fontSize: 20, marginLeft: 8 }}
+					>
 						{gameDisplayName[selectedGame ?? defaultGame]}
 					</ThemedText>
-				</View>
+
+					<Icons.ArrowDown size={14} />
+				</Pressable>
 			</MaskedView>
+			<GameSelector
+				visible={dropdownVisible}
+				onClose={() => setDropdownVisible(false)}
+			/>
 		</ApiImagesContext.Provider>
+	);
+}
+
+function GameSelector({
+	visible,
+	onClose,
+}: {
+	visible: boolean;
+	onClose: () => void;
+}) {
+	const theme = useTheme();
+	const statusBarHeight = useStatusBarHeight();
+
+	const apiData = useContext(ApiContext);
+	const apiImagesData = useContext(ApiImagesContext);
+
+	const [selectedGame, setSelectedGame] = useMMKVString("selected-game") as [
+		keyof AllGames,
+		(value: keyof AllGames) => void,
+	];
+
+	return (
+		<Portal>
+			<Overlay>
+				<View
+					style={{
+						position: "absolute",
+						top: 0,
+						left: 0,
+						right: 0,
+						bottom: 0,
+					}}
+				>
+					<>
+						{visible && (
+							<Animated.View
+								entering={FadeIn.duration(200)}
+								exiting={FadeOut.duration(200)}
+								style={{
+									position: "absolute",
+									top: 0,
+									left: 0,
+									right: 0,
+									bottom: 0,
+									backgroundColor: "#0006",
+								}}
+							>
+								<Pressable
+									style={{
+										position: "absolute",
+										top: 0,
+										left: 0,
+										right: 0,
+										bottom: 0,
+									}}
+									onPress={onClose}
+								/>
+							</Animated.View>
+						)}
+						<Animated.View
+							layout={LinearTransition.duration(150)}
+							style={{
+								backgroundColor: theme.surfaceHigher,
+								display: "flex",
+								alignSelf: "flex-start",
+								flexDirection: "column",
+
+								position: "absolute",
+								top: statusBarHeight + 64,
+								left: 16,
+
+								borderRadius: 8,
+								overflow: "hidden",
+								maxHeight: visible ? "auto" : Number.EPSILON,
+							}}
+						>
+							{Object.entries(apiImagesData ?? {})
+								.filter(([game]) => apiData?.[game as keyof AllGames])
+								.map(([game, data]) => (
+									<Pressable
+										key={game}
+										style={({ pressed }) => ({
+											padding: 12,
+											display: "flex",
+											flexDirection: "row",
+											alignItems: "center",
+											gap: 8,
+											backgroundColor: pressed
+												? theme.surfacePressed
+												: "transparent",
+										})}
+										onPress={() => {
+											setSelectedGame(game as keyof AllGames);
+											onClose();
+										}}
+									>
+										<Image
+											source={{
+												uri: data?.icon,
+												width: 32,
+												height: 32,
+											}}
+											borderRadius={8}
+										/>
+										<ThemedText
+											style={{
+												fontSize: 15,
+												marginLeft: 8,
+												color:
+													game === (selectedGame ?? defaultGame)
+														? theme.accent
+														: theme.text,
+											}}
+										>
+											{gameDisplayName[game as keyof AllGames]}
+										</ThemedText>
+									</Pressable>
+								))}
+						</Animated.View>
+					</>
+				</View>
+			</Overlay>
+		</Portal>
 	);
 }

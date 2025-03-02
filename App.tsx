@@ -1,6 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { PortalProvider } from "@gorhom/portal";
 
 import MainPage from "./src/app/main";
 
@@ -25,8 +26,10 @@ function RootStack() {
 
 export default function App() {
 	return (
-		<NavigationContainer>
-			<RootStack />
-		</NavigationContainer>
+		<PortalProvider>
+			<NavigationContainer>
+				<RootStack />
+			</NavigationContainer>
+		</PortalProvider>
 	);
 }
