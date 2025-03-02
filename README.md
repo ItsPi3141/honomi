@@ -21,6 +21,7 @@ yarn install
 ```sh
 
 yarn start
+yarn android
 ```
 
 <picture>
