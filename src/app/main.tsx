@@ -3,6 +3,7 @@ import type {
 	AllGames,
 	RedeemCodeItemJson,
 	AllGamesRaw,
+	AllGamesImages,
 } from "../types/codes";
 
 import { ThemedButton } from "../components/ThemedButton";
@@ -10,21 +11,15 @@ import { ThemedText } from "../components/ThemedText";
 import { useTheme } from "../hooks/useThemeColor";
 
 import { useContext, useEffect, useState } from "react";
-import {
-	Dimensions,
-	Image,
-	Linking,
-	SectionList,
-	StatusBar,
-	View,
-} from "react-native";
+import { Dimensions, Image, Linking, SectionList, View } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import MaskedView from "@react-native-masked-view/masked-view";
+import AutoHeightImage from "react-native-auto-height-image";
 
 import { useMMKVString } from "react-native-mmkv";
 
 import { openBrowser } from "@swan-io/react-native-browser";
-import { ApiContext } from "../contexts/apiContext";
+import { ApiContext, ApiImagesContext } from "../contexts/apiContext";
 import { decompressFromUint8Array } from "lz-string";
 import { gameDisplayName, redeemCodesPage } from "../constants/Constants";
 import { useStatusBarHeight } from "../hooks/useStatusBarHeight";
@@ -40,6 +35,8 @@ Dimensions.addEventListener("change", ({ window }) => {
 });
 const headerBorderRadius = 24;
 const headerHeight = 72;
+
+const defaultGame = "genshin";
 
 const openRedeemPage = async (code: string) => {
 	const url = `https://genshin.hoyoverse.com/en/gift?code=${code}`;
@@ -243,54 +240,107 @@ function Header() {
 
 	const apiData = useContext(ApiContext);
 
+	const [apiImagesData, setApiImagesData] = useState<AllGamesImages | null>(
+		null,
+	);
+	useEffect(() => {
+		fetch(
+			`https://raw.githubusercontent.com/itspi3141/honomi/main/api/images.json?v=${Date.now()}`,
+		)
+			.then((res) => res.json())
+			.then((res) => {
+				setApiImagesData(res as AllGamesImages);
+			});
+	}, []);
+
 	const [selectedGame, setSelectedGame] = useMMKVString("selected-game") as [
 		keyof AllGames,
 		(value: keyof AllGames) => void,
 	];
 
 	return (
-		<MaskedView
-			style={[
-				{
-					position: "absolute",
-					top: 0,
-					left: 0,
-					right: 0,
-					zIndex: 100,
-					backgroundColor: theme.surface,
-					padding: 16,
-					paddingTop: 32,
+		<ApiImagesContext.Provider value={apiImagesData}>
+			<MaskedView
+				style={[
+					{
+						position: "absolute",
+						top: 0,
+						left: 0,
+						right: 0,
+						zIndex: 100,
+					},
+					{ width: windowWidth },
+					{ height: height + headerBorderRadius },
+					{
+						backgroundColor: apiImagesData?.[selectedGame ?? defaultGame]
+							? `#${apiImagesData?.[selectedGame ?? defaultGame]?.color.toString(16)}`
+							: theme.surface,
+					},
+				]}
+				maskElement={
+					<Svg
+						preserveAspectRatio="none"
+						height="100%"
+						width="100%"
+						viewBox={`0 0 ${windowWidth} ${height + headerBorderRadius}`}
+					>
+						<Path
+							d={`M0 0 L${windowWidth} 0 L${windowWidth} ${
+								height + headerBorderRadius
+							} Q${windowWidth} ${height}, ${
+								windowWidth - headerBorderRadius
+							} ${height} L${headerBorderRadius} ${height} Q0 ${height}, 0 ${
+								height + headerBorderRadius
+							} Z`}
+							fill="black"
+						/>
+					</Svg>
+				}
+			>
+				{apiImagesData?.[selectedGame ?? defaultGame] && (
+					<View
+						style={{
+							zIndex: 1,
+							position: "absolute",
+							top: 0,
+							left: 0,
+							right: 0,
+							bottom: 0,
 
-					flex: 1,
-					gap: 8,
-					justifyContent: "center",
-				},
-				{ width: windowWidth },
-				{ height: height + headerBorderRadius },
-			]}
-			maskElement={
-				<Svg
-					preserveAspectRatio="none"
-					height="100%"
-					width="100%"
-					viewBox={`0 0 ${windowWidth} ${height + headerBorderRadius}`}
+							display: "flex",
+							alignItems: "stretch",
+							justifyContent: "center",
+						}}
+					>
+						<AutoHeightImage
+							width={windowWidth}
+							source={{
+								uri: apiImagesData?.[selectedGame ?? defaultGame]?.banner,
+							}}
+							style={{
+								position: "absolute",
+								top: -16,
+							}}
+						/>
+					</View>
+				)}
+
+				<View
+					style={{
+						zIndex: 2,
+						padding: 16,
+						paddingTop: 32,
+
+						flex: 1,
+						gap: 8,
+						justifyContent: "center",
+					}}
 				>
-					<Path
-						d={`M0 0 L${windowWidth} 0 L${windowWidth} ${
-							height + headerBorderRadius
-						} Q${windowWidth} ${height}, ${
-							windowWidth - headerBorderRadius
-						} ${height} L${headerBorderRadius} ${height} Q0 ${height}, 0 ${
-							height + headerBorderRadius
-						} Z`}
-						fill="black"
-					/>
-				</Svg>
-			}
-		>
-			<ThemedText style={{ fontWeight: "bold", fontSize: 20 }}>
-				{gameDisplayName[selectedGame ?? "genshin"]}
-			</ThemedText>
-		</MaskedView>
+					<ThemedText style={{ fontWeight: "bold", fontSize: 20 }}>
+						{gameDisplayName[selectedGame ?? defaultGame]}
+					</ThemedText>
+				</View>
+			</MaskedView>
+		</ApiImagesContext.Provider>
 	);
 }
