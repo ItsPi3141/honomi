@@ -10,7 +10,7 @@ import { ThemedButton } from "../components/ThemedButton";
 import { ThemedText } from "../components/ThemedText";
 import { useTheme } from "../hooks/useThemeColor";
 
-import { useContext, useEffect, useState } from "react";
+import { memo, useContext, useEffect, useState } from "react";
 import { Dimensions, Image, Linking, SectionList, View } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import MaskedView from "@react-native-masked-view/masked-view";
@@ -149,89 +149,92 @@ export default function MainPage() {
 	);
 }
 
-function RedeemCode({
-	item,
-	handleOpen,
-}: {
-	item: RedeemCodeItem;
-	handleOpen: (code: string) => void;
-}) {
-	const theme = useTheme();
+const RedeemCode = memo(
+	function RedeemCode({
+		item,
+		handleOpen,
+	}: {
+		item: RedeemCodeItem;
+		handleOpen: (code: string) => void;
+	}) {
+		const theme = useTheme();
 
-	return (
-		<View
-			style={{
-				flex: 1,
-				flexDirection: "row",
-				justifyContent: "space-between",
-				alignItems: "flex-start",
-				backgroundColor: theme.surface,
-				padding: 12,
-				marginBottom: 16,
-				borderRadius: 8,
-			}}
-		>
-			<View style={{ flexShrink: 1 }}>
-				<ThemedText style={{ fontWeight: "bold", fontSize: 16 }}>
-					{item.code}
-				</ThemedText>
-				<View
-					style={{
-						flex: 0,
-						flexDirection: "row",
-						alignItems: "center",
-						justifyContent: "flex-start",
-						gap: 4,
-						marginTop: 4,
-						flexWrap: "wrap",
-						width: "100%",
-					}}
-				>
-					{item.rewards.map((reward) => (
-						<View
-							key={reward.image}
-							style={{
-								flex: 0,
-								flexDirection: "row",
-								alignItems: "center",
-							}}
-						>
-							<Image
-								source={{
-									uri: reward.image,
-									width: 20,
-									height: 20,
-								}}
-							/>
-							<ThemedText>{reward.count}</ThemedText>
-						</View>
-					))}
-				</View>
-			</View>
-
+		return (
 			<View
 				style={{
-					flexGrow: 1,
-					minWidth: 48,
+					flex: 1,
+					flexDirection: "row",
+					justifyContent: "space-between",
+					alignItems: "flex-start",
+					backgroundColor: theme.surface,
+					padding: 12,
+					marginBottom: 16,
+					borderRadius: 8,
 				}}
-			/>
-
-			<View style={{ flexShrink: 0, paddingTop: 8, paddingRight: 6 }}>
-				<ThemedButton
-					onPress={() => {
-						handleOpen(item.code);
-					}}
-				>
-					<ThemedText
-						style={{ fontSize: 12, fontWeight: "bold", color: theme.accent }}
-					>
-						Redeem
+			>
+				<View style={{ flexShrink: 1 }}>
+					<ThemedText style={{ fontWeight: "bold", fontSize: 16 }}>
+						{item.code}
 					</ThemedText>
-				</ThemedButton>
+					<View
+						style={{
+							flex: 0,
+							flexDirection: "row",
+							alignItems: "center",
+							justifyContent: "flex-start",
+							gap: 4,
+							marginTop: 4,
+							flexWrap: "wrap",
+							width: "100%",
+						}}
+					>
+						{item.rewards.map((reward) => (
+							<View
+								key={reward.image}
+								style={{
+									flex: 0,
+									flexDirection: "row",
+									alignItems: "center",
+								}}
+							>
+								<Image
+									source={{
+										uri: reward.image,
+										width: 20,
+										height: 20,
+									}}
+								/>
+								<ThemedText>{reward.count}</ThemedText>
+							</View>
+						))}
+					</View>
+				</View>
+
+				<View
+					style={{
+						flexGrow: 1,
+						minWidth: 48,
+					}}
+				/>
+
+				<View style={{ flexShrink: 0, paddingTop: 8, paddingRight: 6 }}>
+					<ThemedButton
+						onPress={() => {
+							handleOpen(item.code);
+						}}
+					>
+						<ThemedText
+							style={{ fontSize: 12, fontWeight: "bold", color: theme.accent }}
+						>
+							Redeem
+						</ThemedText>
+					</ThemedButton>
+				</View>
 			</View>
-		</View>
-	);
-}
+		);
+	},
+	(prev, next) => prev.item.code === next.item.code,
+);
 
 function Header() {
 	const theme = useTheme();
