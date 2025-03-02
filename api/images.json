@@ -1,0 +1,22 @@
+{
+	"genshin": {
+		"banner": "https://upload-os-bbs.hoyolab.com/upload/2025/02/08/fb8f1a63e77b2dab86eac07780835e03_8210076993832394185.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,webp/quality,q_70",
+		"icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/11/08/9db76fb146f82c045bc276956f86e047_6878380451593228482.png?x-oss-process=image/resize,w_128",
+		"color": 1642034
+	},
+	"hsr": {
+		"banner": "https://upload-os-bbs.hoyolab.com/upload/2025/02/26/0ae920b5a03d4d6972024f318bc7b56f_615672189599253802.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,webp/quality,q_70",
+		"icon": "https://hyl-static-res-prod.hoyolab.com/communityweb/business/starrail_hoyoverse.png?x-oss-process=image/resize,w_128",
+		"color": 1447452
+	},
+	"zzz": {
+		"banner": "https://upload-os-bbs.hoyolab.com/upload/2025/01/21/56c2e1158ba42dc33b1569ea6c0a37fa_869038391441555733.png?x-oss-process=image/auto-orient,0/interlace,1/format,webp/quality,q_70",
+		"icon": "https://hyl-static-res-prod.hoyolab.com/communityweb/business/nap.png?x-oss-process=image/resize,w_128",
+		"color": 16119547
+	},
+	"wuwa": {
+		"banner": "https://static.wikia.nocookie.net/wutheringwaves/images/0/08/Site-background-dark/revision/latest/scale-to-width-down/900",
+		"icon": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4a/Site-favicon.ico/revision/latest/scale-to-width-down/128",
+		"color": 4208937
+	}
+}
