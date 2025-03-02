@@ -9,7 +9,7 @@ import { ThemedButton } from "../components/ThemedButton";
 import { ThemedText } from "../components/ThemedText";
 import { useTheme } from "../hooks/useThemeColor";
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import {
 	Dimensions,
 	Image,
@@ -56,7 +56,7 @@ export default function MainPage() {
 	const [apiData, setApiData] = useState<AllGames | null>(null);
 	useEffect(() => {
 		fetch(
-			"https://raw.githubusercontent.com/itspi3141/honomi/main/api/codes.compressed.json",
+			`https://raw.githubusercontent.com/itspi3141/honomi/main/api/codes.compressed.json?v=${Date.now()}`,
 		)
 			.then((res) => res.arrayBuffer())
 			.then((buffer) => decompressFromUint8Array(new Uint8Array(buffer)))
@@ -117,11 +117,11 @@ export default function MainPage() {
 						[
 							{
 								title: "Valid Codes",
-								data: apiData?.genshin.valid ?? [],
+								data: apiData?.genshin?.valid ?? [],
 							},
 							{
 								title: "Expired Codes",
-								data: apiData?.genshin.expired ?? [],
+								data: apiData?.genshin?.expired ?? [],
 							},
 						] as DataItem[]
 					}
@@ -240,6 +240,8 @@ function Header() {
 	const theme = useTheme();
 
 	const height = useStatusBarHeight() + headerHeight;
+
+	const apiData = useContext(ApiContext);
 
 	const [selectedGame, setSelectedGame] = useMMKVString("selected-game") as [
 		keyof AllGames,
