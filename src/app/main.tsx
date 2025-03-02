@@ -163,6 +163,7 @@ export default function MainPage() {
 					keyExtractor={(item, index) => `${item}_${index}`}
 					showsVerticalScrollIndicator={false}
 					showsHorizontalScrollIndicator={false}
+					removeClippedSubviews={true}
 				/>
 			</View>
 		</ApiContext.Provider>
