@@ -7710,27 +7710,6 @@
 						"n": 1
 					}
 				]
-			},
-			{
-				"c": "SOLDIER0ANBY",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 300
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 30000
-					},
-					{
-						"i": "1/1c/Item_Senior_Investigator_Log",
-						"n": 2
-					},
-					{
-						"i": "5/54/Item_W-Engine_Energy_Module",
-						"n": 3
-					}
-				]
 			}
 		],
 		"e": [
@@ -8096,6 +8075,27 @@
 					{
 						"i": "a/a2/Item_Denny",
 						"n": 30000
+					}
+				]
+			},
+			{
+				"c": "SOLDIER0ANBY",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 300
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "1/1c/Item_Senior_Investigator_Log",
+						"n": 2
+					},
+					{
+						"i": "5/54/Item_W-Engine_Energy_Module",
+						"n": 3
 					}
 				]
 			}
