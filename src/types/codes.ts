@@ -1,3 +1,8 @@
+export enum Game {
+	Genshin = 2,
+	Hsr = 6,
+	Zzz = 8,
+}
 export type RedeemCodeItem = {
 	code: string;
 	rewards: {

@@ -1,8 +1,10 @@
-import type {
-	RedeemCodeItemJson,
-	RedeemCodesCollectionRawJson,
-} from "@/types/codes";
+import {
+	type RedeemCodeItemJson,
+	type RedeemCodesCollectionRawJson,
+	Game,
+} from "../../src/types/codes";
 import { wikiaAssetProcessor, genericScraper } from "../codesScraper";
+import { genericHoyolabScraper } from "./hoyolab";
 
 export const hsrScraper = async (): Promise<RedeemCodesCollectionRawJson> => {
 	const handler = (document: Document): RedeemCodesCollectionRawJson => {
@@ -54,10 +56,12 @@ export const hsrScraper = async (): Promise<RedeemCodesCollectionRawJson> => {
 		};
 	};
 
-	const codes = await genericScraper(
+	const codes = (await genericScraper(
 		"https://antifandom.com/honkai-star-rail/wiki/Redemption_Code",
 		handler,
-	);
+	)) as RedeemCodesCollectionRawJson;
+
+	codes.v = await genericHoyolabScraper(codes.v, Game.Hsr);
 
 	return codes as RedeemCodesCollectionRawJson;
 };

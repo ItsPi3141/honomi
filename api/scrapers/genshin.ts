@@ -1,8 +1,10 @@
-import type {
-	RedeemCodeItemJson,
-	RedeemCodesCollectionRawJson,
-} from "@/types/codes";
+import {
+	type RedeemCodeItemJson,
+	type RedeemCodesCollectionRawJson,
+	Game,
+} from "../../src/types/codes";
 import { wikiaAssetProcessor, genericScraper } from "../codesScraper";
+import { genericHoyolabScraper } from "./hoyolab";
 
 export const genshinScraper =
 	async (): Promise<RedeemCodesCollectionRawJson> => {
@@ -46,14 +48,16 @@ export const genshinScraper =
 			return codes;
 		};
 
-		const validCodes = await genericScraper(
+		let validCodes = (await genericScraper(
 			"https://antifandom.com/genshin-impact/wiki/Promotional_Code",
 			handler,
-		);
-		const expiredCodes = await genericScraper(
+		)) as RedeemCodeItemJson[];
+		const expiredCodes = (await genericScraper(
 			"https://antifandom.com/genshin-impact/wiki/Promotional_Code/History",
 			handler,
-		);
+		)) as RedeemCodeItemJson[];
+
+		validCodes = await genericHoyolabScraper(validCodes, Game.Genshin);
 
 		return {
 			v: validCodes as RedeemCodeItemJson[],
