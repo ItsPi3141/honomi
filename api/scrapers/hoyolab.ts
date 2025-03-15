@@ -23,7 +23,7 @@ export const genericHoyolabScraper = async (
 		validCodes.push({
 			c: code.exchange_code,
 			r: code.icon_bonuses.map((item: Record<string, string | number>) => ({
-				i: item.icon_url,
+				i: `${(item.icon_url as string).split("?")[0]}?x-oss-process=image/resize,w_20`,
 				n: item.bonus_num,
 			})),
 		});
