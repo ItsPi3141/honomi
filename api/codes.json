@@ -7774,6 +7774,19 @@
 						"n": 1
 					}
 				]
+			},
+			{
+				"c": "ZZZ16SPECIAL",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 60
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 6666
+					}
+				]
 			}
 		],
 		"e": [
