@@ -5140,6 +5140,19 @@
 						"n": 10000
 					}
 				]
+			},
+			{
+				"c": "FIGHTWELLMYDEI",
+				"r": [
+					{
+						"i": "8/8a/Item_Travelers_Guide",
+						"n": 3
+					},
+					{
+						"i": "3/3e/Item_Golden_Honeycake",
+						"n": 2
+					}
+				]
 			}
 		],
 		"e": [
