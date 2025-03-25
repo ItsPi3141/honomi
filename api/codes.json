@@ -72,41 +72,15 @@
 				]
 			},
 			{
-				"c": "GI55Teteocan",
+				"c": "HS4NM7YDGC99",
 				"r": [
 					{
-						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/150a941de99e21fc96dce97cde2dae22_1631694835879620915.png",
-						"n": 100
+						"i": "d/d4/Item_Primogem",
+						"n": 60
 					},
 					{
-						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/d3eb1267f27bead29907cb279d4365ab_4473305467748929436.png",
-						"n": 10
-					}
-				]
-			},
-			{
-				"c": "GoGoVaresa0326",
-				"r": [
-					{
-						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/150a941de99e21fc96dce97cde2dae22_1631694835879620915.png",
-						"n": 100
-					},
-					{
-						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/46de1e881b5dff638969aed85850e388_7373589751062039567.png",
+						"i": "0/07/Item_Adventurer%27s_Experience",
 						"n": 5
-					}
-				]
-			},
-			{
-				"c": "CoachIansan0326",
-				"r": [
-					{
-						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/150a941de99e21fc96dce97cde2dae22_1631694835879620915.png",
-						"n": 100
-					},
-					{
-						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/503abf5f2f2c8b2013dde0f2197fc9ac_3214074117670348863.png",
-						"n": 50000
 					}
 				]
 			}
@@ -5059,6 +5033,45 @@
 					{
 						"i": "2/20/Item_Teyvat_Fried_Egg",
 						"n": 2
+					}
+				]
+			},
+			{
+				"c": "CoachIansan0326",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 100
+					},
+					{
+						"i": "8/84/Item_Mora",
+						"n": 50000
+					}
+				]
+			},
+			{
+				"c": "GoGoVaresa0326",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 100
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "GI55Teteocan",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 100
+					},
+					{
+						"i": "5/55/Item_Mystic_Enhancement_Ore",
+						"n": 10
 					}
 				]
 			}
