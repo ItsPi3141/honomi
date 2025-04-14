@@ -89,31 +89,6 @@
 				]
 			},
 			{
-				"c": "GS55YTPY8X",
-				"r": [
-					{
-						"i": "8/84/Item_Mora",
-						"n": 30000
-					},
-					{
-						"i": "2/26/Item_Hero%27s_Wit",
-						"n": 3
-					},
-					{
-						"i": "5/55/Item_Mystic_Enhancement_Ore",
-						"n": 5
-					},
-					{
-						"i": "9/95/Item_Teachings_of_Conflict",
-						"n": 3
-					},
-					{
-						"i": "3/39/Item_Vajrada_Amethyst_Sliver",
-						"n": 3
-					}
-				]
-			},
-			{
 				"c": "UAL6MXW8BUFH",
 				"r": [
 					{
@@ -5160,6 +5135,31 @@
 					{
 						"i": "7/72/Item_Jueyun_Chili_Chicken",
 						"n": 5
+					}
+				]
+			},
+			{
+				"c": "GS55YTPY8X",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 30000
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 3
+					},
+					{
+						"i": "5/55/Item_Mystic_Enhancement_Ore",
+						"n": 5
+					},
+					{
+						"i": "9/95/Item_Teachings_of_Conflict",
+						"n": 3
+					},
+					{
+						"i": "3/39/Item_Vajrada_Amethyst_Sliver",
+						"n": 3
 					}
 				]
 			}
