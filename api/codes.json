@@ -7942,7 +7942,7 @@
 				]
 			},
 			{
-				"c": "ZZZ16SPECIAL",
+				"c": "ZZZ17TIMOTHYRANDY",
 				"r": [
 					{
 						"i": "4/4c/Item_Polychrome",
@@ -8412,6 +8412,19 @@
 					{
 						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/86e1f7a5ff283d527bbc019475847174_5751095862610622324.webp?x-oss-process=image/resize,w_20",
 						"n": 2
+					}
+				]
+			},
+			{
+				"c": "ZZZ16SPECIAL",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 60
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 6666
 					}
 				]
 			}
