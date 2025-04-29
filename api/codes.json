@@ -8467,57 +8467,6 @@
 						"n": 10000
 					}
 				]
-			},
-			{
-				"c": "WITHYOU",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 100
-					},
-					{
-						"i": "/e/e1/Item_Premium_Tuner",
-						"n": 20
-					},
-					{
-						"i": "/d/d6/Item_Advanced_Sealed_Tube",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "EVERFLOWING",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 100
-					},
-					{
-						"i": "/d/d6/Item_Premium_Resonance_Potion",
-						"n": 4
-					},
-					{
-						"i": "/b/b5/Item_Advanced_Energy_Core",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "1STANNIVERSARY",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 100
-					},
-					{
-						"i": "/1/13/Item_Forgery_Premium_Supply",
-						"n": 2
-					},
-					{
-						"i": "/d/d1/Item_Shell_Credit",
-						"n": 40000
-					}
-				]
 			}
 		],
 		"e": [
@@ -8796,6 +8745,57 @@
 					{
 						"i": "/d/d1/Item_Shell_Credit",
 						"n": 20000
+					}
+				]
+			},
+			{
+				"c": "WITHYOU",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/e/e1/Item_Premium_Tuner",
+						"n": 20
+					},
+					{
+						"i": "/d/d6/Item_Advanced_Sealed_Tube",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "EVERFLOWING",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/d/d6/Item_Premium_Resonance_Potion",
+						"n": 4
+					},
+					{
+						"i": "/b/b5/Item_Advanced_Energy_Core",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "1STANNIVERSARY",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/1/13/Item_Forgery_Premium_Supply",
+						"n": 2
+					},
+					{
+						"i": "/d/d1/Item_Shell_Credit",
+						"n": 40000
 					}
 				]
 			}
