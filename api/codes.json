@@ -5318,6 +5318,31 @@
 						"n": 5
 					}
 				]
+			},
+			{
+				"c": "GS56YTI6X6",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 30000
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 3
+					},
+					{
+						"i": "5/55/Item_Mystic_Enhancement_Ore",
+						"n": 5
+					},
+					{
+						"i": "8/87/Item_Shivada_Jade_Sliver",
+						"n": 3
+					},
+					{
+						"i": "f/f1/Item_Teachings_of_Justice",
+						"n": 3
+					}
+				]
 			}
 		]
 	},
