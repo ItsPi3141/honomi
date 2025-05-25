@@ -8224,27 +8224,6 @@
 						"n": 6666
 					}
 				]
-			},
-			{
-				"c": "ZZZANNIVERSARY",
-				"r": [
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/cd6682dd2d871dc93dfa28c3f281d527_6175554878133394960.webp?x-oss-process=image/resize,w_20",
-						"n": 30000
-					},
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/8609070fe148c0e0e367cda25fdae632_208324374592932270.webp?x-oss-process=image/resize,w_20",
-						"n": 300
-					},
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/6ef3e419022c871257a936b1857ac9d1_411767156105350865.webp?x-oss-process=image/resize,w_20",
-						"n": 3
-					},
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/86e1f7a5ff283d527bbc019475847174_5751095862610622324.webp?x-oss-process=image/resize,w_20",
-						"n": 2
-					}
-				]
 			}
 		],
 		"e": [
@@ -8717,6 +8696,27 @@
 					{
 						"i": "a/a2/Item_Denny",
 						"n": 6666
+					}
+				]
+			},
+			{
+				"c": "ZZZANNIVERSARY",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/cd6682dd2d871dc93dfa28c3f281d527_6175554878133394960.webp?x-oss-process=image/resize,w_20",
+						"n": 30000
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/8609070fe148c0e0e367cda25fdae632_208324374592932270.webp?x-oss-process=image/resize,w_20",
+						"n": 300
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/6ef3e419022c871257a936b1857ac9d1_411767156105350865.webp?x-oss-process=image/resize,w_20",
+						"n": 3
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/86e1f7a5ff283d527bbc019475847174_5751095862610622324.webp?x-oss-process=image/resize,w_20",
+						"n": 2
 					}
 				]
 			}
