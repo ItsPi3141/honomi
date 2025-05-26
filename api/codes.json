@@ -68,23 +68,6 @@
 				]
 			},
 			{
-				"c": "56CacucuVSAjaw",
-				"r": [
-					{
-						"i": "d/d4/Item_Primogem",
-						"n": 30
-					},
-					{
-						"i": "8/84/Item_Mora",
-						"n": 20000
-					},
-					{
-						"i": "2/26/Item_Hero%27s_Wit",
-						"n": 3
-					}
-				]
-			},
-			{
 				"c": "VSL93LTE5WY5",
 				"r": [
 					{
@@ -5390,6 +5373,23 @@
 					},
 					{
 						"i": "f/f1/Item_Teachings_of_Justice",
+						"n": 3
+					}
+				]
+			},
+			{
+				"c": "56CacucuVSAjaw",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 30
+					},
+					{
+						"i": "8/84/Item_Mora",
+						"n": 20000
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
 						"n": 3
 					}
 				]
