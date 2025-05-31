@@ -8784,6 +8784,57 @@
 						"n": 10000
 					}
 				]
+			},
+			{
+				"c": "SHADOWOFGLORY",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/d/d6/Item_Premium_Resonance_Potion",
+						"n": 4
+					},
+					{
+						"i": "/b/b5/Item_Advanced_Energy_Core",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "FLAMESOFHEART",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/1/13/Item_Forgery_Premium_Supply",
+						"n": 2
+					},
+					{
+						"i": "/d/d1/Item_Shell_Credit",
+						"n": 40000
+					}
+				]
+			},
+			{
+				"c": "AGONISON",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/e/e8/Item_Weekly_Challenge_Supply_Pack",
+						"n": 1
+					},
+					{
+						"i": "/d/d6/Item_Advanced_Sealed_Tube",
+						"n": 2
+					}
+				]
 			}
 		],
 		"e": [
