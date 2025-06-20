@@ -66,6 +66,48 @@
 						"n": 5
 					}
 				]
+			},
+			{
+				"c": "YTYD336W7K77",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 10000
+					},
+					{
+						"i": "0/07/Item_Adventurer%27s_Experience",
+						"n": 10
+					},
+					{
+						"i": "2/23/Item_Fine_Enhancement_Ore",
+						"n": 5
+					},
+					{
+						"i": "9/98/Item_Stir-Fried_Fish_Noodles",
+						"n": 5
+					},
+					{
+						"i": "7/72/Item_Jueyun_Chili_Chicken",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "FIGHTLIKESKIRK57",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 40
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 3
+					},
+					{
+						"i": "b/b3/Item_Abyssal_Bounty",
+						"n": 1
+					}
+				]
 			}
 		],
 		"e": [
@@ -5549,45 +5591,6 @@
 						"n": 120
 					}
 				]
-			},
-			{
-				"c": "FTJ6CVTULSXP",
-				"r": [
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
-						"n": 100
-					},
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/0b12bdf76fa4abc6b4d1fdfc0fb4d6f5_4521150989210768295.webp?x-oss-process=image/resize,w_20",
-						"n": 50000
-					}
-				]
-			},
-			{
-				"c": "ZS36CVBUMTZB",
-				"r": [
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
-						"n": 100
-					},
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/508229a94e4fa459651f64c1cd02687a_6307505132287490837.webp?x-oss-process=image/resize,w_20",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "DTJ7CVACLBGF",
-				"r": [
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
-						"n": 100
-					},
-					{
-						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/7cb0e487e051f177d3f41de8d4bbc521_2556290033227986328.webp?x-oss-process=image/resize,w_20",
-						"n": 4
-					}
-				]
 			}
 		],
 		"e": [
@@ -8323,6 +8326,45 @@
 					{
 						"i": "d/d9/Item_Credit",
 						"n": 10000
+					}
+				]
+			},
+			{
+				"c": "FTJ6CVTULSXP",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/0b12bdf76fa4abc6b4d1fdfc0fb4d6f5_4521150989210768295.webp?x-oss-process=image/resize,w_20",
+						"n": 50000
+					}
+				]
+			},
+			{
+				"c": "ZS36CVBUMTZB",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/508229a94e4fa459651f64c1cd02687a_6307505132287490837.webp?x-oss-process=image/resize,w_20",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "DTJ7CVACLBGF",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/7cb0e487e051f177d3f41de8d4bbc521_2556290033227986328.webp?x-oss-process=image/resize,w_20",
+						"n": 4
 					}
 				]
 			}
