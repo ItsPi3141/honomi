@@ -8968,24 +8968,6 @@
 						"n": 10000
 					}
 				]
-			},
-			{
-				"c": "SOLARISSEASIDESTORY",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 90
-					}
-				]
-			},
-			{
-				"c": "SUMMERSHALLNOTFADE",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 90
-					}
-				]
 			}
 		],
 		"e": [
@@ -9366,6 +9348,24 @@
 					{
 						"i": "/d/d6/Item_Advanced_Sealed_Tube",
 						"n": 2
+					}
+				]
+			},
+			{
+				"c": "SOLARISSEASIDESTORY",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 90
+					}
+				]
+			},
+			{
+				"c": "SUMMERSHALLNOTFADE",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 90
 					}
 				]
 			}
