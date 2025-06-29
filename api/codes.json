@@ -108,6 +108,27 @@
 						"n": 1
 					}
 				]
+			},
+			{
+				"c": "GIFTFROMSKIRK57",
+				"r": [
+					{
+						"i": "9/9a/Item_Shivada_Jade_Fragment",
+						"n": 3
+					},
+					{
+						"i": "2/28/Item_Meshing_Gear",
+						"n": 3
+					},
+					{
+						"i": "2/23/Item_Fine_Enhancement_Ore",
+						"n": 3
+					},
+					{
+						"i": "8/84/Item_Mora",
+						"n": 30000
+					}
+				]
 			}
 		],
 		"e": [
