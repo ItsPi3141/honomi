@@ -129,6 +129,19 @@
 						"n": 30000
 					}
 				]
+			},
+			{
+				"c": "G9VY57AWQACW",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 60
+					},
+					{
+						"i": "5/55/Item_Mystic_Enhancement_Ore",
+						"n": 10
+					}
+				]
 			}
 		],
 		"e": [
