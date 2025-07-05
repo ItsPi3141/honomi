@@ -5616,6 +5616,23 @@
 						"n": 1
 					}
 				]
+			},
+			{
+				"c": "CREATIONNYMPH",
+				"r": [
+					{
+						"i": "d/d9/Item_Stellar_Jade",
+						"n": 60
+					},
+					{
+						"i": "8/83/Item_Fuel",
+						"n": 1
+					},
+					{
+						"i": "3/3f/Item_Heroic_Variable",
+						"n": 1
+					}
+				]
 			}
 		],
 		"e": [
@@ -8482,6 +8499,91 @@
 					{
 						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2024/06/07/86e1f7a5ff283d527bbc019475847174_5751095862610622324.webp?x-oss-process=image/resize,w_20",
 						"n": 2
+					}
+				]
+			},
+			{
+				"c": "ZZZTHANK",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "1/1c/Item_Senior_Investigator_Log",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZYOU",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "5/54/Item_W-Engine_Energy_Module",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZFOR",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "5/56/Item_Ether_Plating_Agent",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZSTAYING",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "b/b9/Item_Bangboo_System_Widget",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZWITHUS",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "1/1c/Item_Senior_Investigator_Log",
+						"n": 5
 					}
 				]
 			}
