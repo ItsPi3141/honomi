@@ -105,6 +105,19 @@
 						"n": 50000
 					}
 				]
+			},
+			{
+				"c": "CLD6ZWU35GTH",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 60
+					},
+					{
+						"i": "0/07/Item_Adventurer%27s_Experience",
+						"n": 5
+					}
+				]
 			}
 		],
 		"e": [
