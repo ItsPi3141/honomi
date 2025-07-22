@@ -8545,104 +8545,6 @@
 				]
 			},
 			{
-				"c": "ZZZ20NEWSEASON",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 60
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 6666
-					}
-				]
-			},
-			{
-				"c": "ZZZTHANK",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 20
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 30000
-					},
-					{
-						"i": "1/1c/Item_Senior_Investigator_Log",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "ZZZYOU",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 20
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 30000
-					},
-					{
-						"i": "5/54/Item_W-Engine_Energy_Module",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "ZZZFOR",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 20
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 30000
-					},
-					{
-						"i": "5/56/Item_Ether_Plating_Agent",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "ZZZSTAYING",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 20
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 30000
-					},
-					{
-						"i": "b/b9/Item_Bangboo_System_Widget",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "ZZZWITHUS",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 20
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 30000
-					},
-					{
-						"i": "1/1c/Item_Senior_Investigator_Log",
-						"n": 5
-					}
-				]
-			},
-			{
 				"c": "ZZZ21SUMMER",
 				"r": [
 					{
@@ -8652,6 +8554,27 @@
 					{
 						"i": "a/a2/Item_Denny",
 						"n": 6666
+					}
+				]
+			},
+			{
+				"c": "YUZUHAGIFT",
+				"r": [
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 10000
+					},
+					{
+						"i": "5/56/Item_Official_Investigator_Log",
+						"n": 10
+					},
+					{
+						"i": "7/7b/Item_W-Engine_Power_Supply",
+						"n": 10
+					},
+					{
+						"i": "7/7a/Item_Crystallized_Plating_Agent",
+						"n": 10
 					}
 				]
 			}
@@ -9203,6 +9126,104 @@
 					{
 						"i": "4/4c/Item_Polychrome",
 						"n": 50
+					}
+				]
+			},
+			{
+				"c": "ZZZTHANK",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "1/1c/Item_Senior_Investigator_Log",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZYOU",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "5/54/Item_W-Engine_Energy_Module",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZFOR",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "5/56/Item_Ether_Plating_Agent",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZSTAYING",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "b/b9/Item_Bangboo_System_Widget",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZWITHUS",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 20
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 30000
+					},
+					{
+						"i": "1/1c/Item_Senior_Investigator_Log",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "ZZZ20NEWSEASON",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 60
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 6666
 					}
 				]
 			}
