@@ -9299,57 +9299,6 @@
 						"n": 10000
 					}
 				]
-			},
-			{
-				"c": "ILLUSIONHAUNTS",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 100
-					},
-					{
-						"i": "/e/e2/Item_Advanced_Resonance_Potion",
-						"n": 3
-					},
-					{
-						"i": "/8/88/Item_Medium_Revival_Inhaler",
-						"n": 2
-					}
-				]
-			},
-			{
-				"c": "DREAMSPERSIST",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 100
-					},
-					{
-						"i": "/b/b5/Item_Advanced_Energy_Core",
-						"n": 3
-					},
-					{
-						"i": "/4/41/Item_Medium_Nutrient_Block",
-						"n": 2
-					}
-				]
-			},
-			{
-				"c": "THISISFINALE",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 100
-					},
-					{
-						"i": "/a/ab/Item_Advanced_Enclosure_Tank",
-						"n": 3
-					},
-					{
-						"i": "/d/d1/Item_Shell_Credit",
-						"n": 20000
-					}
-				]
 			}
 		],
 		"e": [
@@ -9748,6 +9697,57 @@
 					{
 						"i": "/1/16/Item_Astrite",
 						"n": 90
+					}
+				]
+			},
+			{
+				"c": "ILLUSIONHAUNTS",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/e/e2/Item_Advanced_Resonance_Potion",
+						"n": 3
+					},
+					{
+						"i": "/8/88/Item_Medium_Revival_Inhaler",
+						"n": 2
+					}
+				]
+			},
+			{
+				"c": "DREAMSPERSIST",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/b/b5/Item_Advanced_Energy_Core",
+						"n": 3
+					},
+					{
+						"i": "/4/41/Item_Medium_Nutrient_Block",
+						"n": 2
+					}
+				]
+			},
+			{
+				"c": "THISISFINALE",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 100
+					},
+					{
+						"i": "/a/ab/Item_Advanced_Enclosure_Tank",
+						"n": 3
+					},
+					{
+						"i": "/d/d1/Item_Shell_Credit",
+						"n": 20000
 					}
 				]
 			}
