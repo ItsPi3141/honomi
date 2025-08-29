@@ -121,6 +121,45 @@
 						"n": 3
 					}
 				]
+			},
+			{
+				"c": "LunaI0910",
+				"r": [
+					{
+						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/150a941de99e21fc96dce97cde2dae22_1631694835879620915.png?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/d3eb1267f27bead29907cb279d4365ab_4473305467748929436.png?x-oss-process=image/resize,w_20",
+						"n": 10
+					}
+				]
+			},
+			{
+				"c": "LaumaNodKraiFlins",
+				"r": [
+					{
+						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/150a941de99e21fc96dce97cde2dae22_1631694835879620915.png?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/46de1e881b5dff638969aed85850e388_7373589751062039567.png?x-oss-process=image/resize,w_20",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "",
+				"r": [
+					{
+						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/150a941de99e21fc96dce97cde2dae22_1631694835879620915.png?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://webstatic.hoyoverse.com/upload/static-resource/2023/05/13/503abf5f2f2c8b2013dde0f2197fc9ac_3214074117670348863.png?x-oss-process=image/resize,w_20",
+						"n": 50000
+					}
+				]
 			}
 		],
 		"e": [
