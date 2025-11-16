@@ -2,127 +2,7 @@
 	"genshin": {
 		"p": "https://static.wikia.nocookie.net/gensin-impact/images/",
 		"s": ".png/revision/latest/scale-to-width-down/20",
-		"v": [
-			{
-				"c": "GENSHINGIFT",
-				"r": [
-					{
-						"i": "d/d4/Item_Primogem",
-						"n": 50
-					},
-					{
-						"i": "2/26/Item_Hero%27s_Wit",
-						"n": 3
-					}
-				]
-			},
-			{
-				"c": "8QD412QXCEU1",
-				"r": [
-					{
-						"i": "d/d4/Item_Primogem",
-						"n": 60
-					},
-					{
-						"i": "0/07/Item_Adventurer%27s_Experience",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "G9VY57AWQACW",
-				"r": [
-					{
-						"i": "d/d4/Item_Primogem",
-						"n": 60
-					},
-					{
-						"i": "5/55/Item_Mystic_Enhancement_Ore",
-						"n": 10
-					}
-				]
-			},
-			{
-				"c": "EZIZ8W3J47NA",
-				"r": [
-					{
-						"i": "8/84/Item_Mora",
-						"n": 10000
-					},
-					{
-						"i": "0/07/Item_Adventurer%27s_Experience",
-						"n": 10
-					},
-					{
-						"i": "2/23/Item_Fine_Enhancement_Ore",
-						"n": 5
-					},
-					{
-						"i": "9/98/Item_Stir-Fried_Fish_Noodles",
-						"n": 5
-					},
-					{
-						"i": "7/72/Item_Jueyun_Chili_Chicken",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "CLD6ZWU35GTH",
-				"r": [
-					{
-						"i": "d/d4/Item_Primogem",
-						"n": 60
-					},
-					{
-						"i": "0/07/Item_Adventurer%27s_Experience",
-						"n": 5
-					}
-				]
-			},
-			{
-				"c": "GS58OT75MG",
-				"r": [
-					{
-						"i": "8/84/Item_Mora",
-						"n": 30000
-					},
-					{
-						"i": "2/26/Item_Hero%27s_Wit",
-						"n": 3
-					},
-					{
-						"i": "5/55/Item_Mystic_Enhancement_Ore",
-						"n": 5
-					},
-					{
-						"i": "9/95/Item_Teachings_of_Conflict",
-						"n": 3
-					},
-					{
-						"i": "3/39/Item_Vajrada_Amethyst_Sliver",
-						"n": 3
-					}
-				]
-			},
-			{
-				"c": "VSWSRL22S4PD",
-				"r": [
-					{
-						"i": "8/84/Item_Mora",
-						"n": 20000
-					},
-					{
-						"i": "f/f5/Item_Ideal_Circumstance",
-						"n": 3
-					},
-					{
-						"i": "0/02/Item_The_Endeavor",
-						"n": 3
-					}
-				]
-			}
-		],
+		"v": [],
 		"e": [
 			{
 				"c": "WEAV365PI953",
@@ -5802,83 +5682,132 @@
 						"n": 50000
 					}
 				]
+			},
+			{
+				"c": "GENSHINGIFT",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 50
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 3
+					}
+				]
+			},
+			{
+				"c": "8QD412QXCEU1",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 60
+					},
+					{
+						"i": "0/07/Item_Adventurer%27s_Experience",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "G9VY57AWQACW",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 60
+					},
+					{
+						"i": "5/55/Item_Mystic_Enhancement_Ore",
+						"n": 10
+					}
+				]
+			},
+			{
+				"c": "EZIZ8W3J47NA",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 10000
+					},
+					{
+						"i": "0/07/Item_Adventurer%27s_Experience",
+						"n": 10
+					},
+					{
+						"i": "2/23/Item_Fine_Enhancement_Ore",
+						"n": 5
+					},
+					{
+						"i": "9/98/Item_Stir-Fried_Fish_Noodles",
+						"n": 5
+					},
+					{
+						"i": "7/72/Item_Jueyun_Chili_Chicken",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "CLD6ZWU35GTH",
+				"r": [
+					{
+						"i": "d/d4/Item_Primogem",
+						"n": 60
+					},
+					{
+						"i": "0/07/Item_Adventurer%27s_Experience",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "GS58OT75MG",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 30000
+					},
+					{
+						"i": "2/26/Item_Hero%27s_Wit",
+						"n": 3
+					},
+					{
+						"i": "5/55/Item_Mystic_Enhancement_Ore",
+						"n": 5
+					},
+					{
+						"i": "9/95/Item_Teachings_of_Conflict",
+						"n": 3
+					},
+					{
+						"i": "3/39/Item_Vajrada_Amethyst_Sliver",
+						"n": 3
+					}
+				]
+			},
+			{
+				"c": "VSWSRL22S4PD",
+				"r": [
+					{
+						"i": "8/84/Item_Mora",
+						"n": 20000
+					},
+					{
+						"i": "f/f5/Item_Ideal_Circumstance",
+						"n": 3
+					},
+					{
+						"i": "0/02/Item_The_Endeavor",
+						"n": 3
+					}
+				]
 			}
 		]
 	},
 	"hsr": {
 		"p": "https://static.wikia.nocookie.net/houkai-star-rail/images/",
 		"s": ".png/revision/latest/scale-to-width-down/20",
-		"v": [
-			{
-				"c": "IFYOUAREREADINGTHIS",
-				"r": [
-					{
-						"i": "d/d9/Item_Stellar_Jade",
-						"n": 60
-					},
-					{
-						"i": "8/83/Item_Fuel",
-						"n": 1
-					}
-				]
-			},
-			{
-				"c": "STARRAILGIFT",
-				"r": [
-					{
-						"i": "d/d9/Item_Stellar_Jade",
-						"n": 50
-					},
-					{
-						"i": "d/d9/Item_Credit",
-						"n": 10000
-					}
-				]
-			},
-			{
-				"c": "FAREWELL",
-				"r": [
-					{
-						"i": "d/d9/Item_Stellar_Jade",
-						"n": 60
-					},
-					{
-						"i": "8/83/Item_Fuel",
-						"n": 1
-					}
-				]
-			},
-			{
-				"c": "CREATIONNYMPH",
-				"r": [
-					{
-						"i": "d/d9/Item_Stellar_Jade",
-						"n": 60
-					},
-					{
-						"i": "8/83/Item_Fuel",
-						"n": 1
-					},
-					{
-						"i": "3/3f/Item_Heroic_Variable",
-						"n": 1
-					}
-				]
-			},
-			{
-				"c": "YA266JQ8VA4X",
-				"r": [
-					{
-						"i": "d/d9/Item_Stellar_Jade",
-						"n": 50
-					},
-					{
-						"i": "d/d9/Item_Credit",
-						"n": 10000
-					}
-				]
-			}
-		],
+		"v": [],
 		"e": [
 			{
 				"c": "7A324EYX6SHT",
@@ -8779,6 +8708,75 @@
 						"n": 4
 					}
 				]
+			},
+			{
+				"c": "IFYOUAREREADINGTHIS",
+				"r": [
+					{
+						"i": "d/d9/Item_Stellar_Jade",
+						"n": 60
+					},
+					{
+						"i": "8/83/Item_Fuel",
+						"n": 1
+					}
+				]
+			},
+			{
+				"c": "STARRAILGIFT",
+				"r": [
+					{
+						"i": "d/d9/Item_Stellar_Jade",
+						"n": 50
+					},
+					{
+						"i": "d/d9/Item_Credit",
+						"n": 10000
+					}
+				]
+			},
+			{
+				"c": "FAREWELL",
+				"r": [
+					{
+						"i": "d/d9/Item_Stellar_Jade",
+						"n": 60
+					},
+					{
+						"i": "8/83/Item_Fuel",
+						"n": 1
+					}
+				]
+			},
+			{
+				"c": "CREATIONNYMPH",
+				"r": [
+					{
+						"i": "d/d9/Item_Stellar_Jade",
+						"n": 60
+					},
+					{
+						"i": "8/83/Item_Fuel",
+						"n": 1
+					},
+					{
+						"i": "3/3f/Item_Heroic_Variable",
+						"n": 1
+					}
+				]
+			},
+			{
+				"c": "YA266JQ8VA4X",
+				"r": [
+					{
+						"i": "d/d9/Item_Stellar_Jade",
+						"n": 50
+					},
+					{
+						"i": "d/d9/Item_Credit",
+						"n": 10000
+					}
+				]
 			}
 		]
 	},
@@ -8786,61 +8784,6 @@
 		"p": "https://static.wikia.nocookie.net/zenless-zone-zero/images/",
 		"s": ".png/revision/latest/scale-to-width-down/20",
 		"v": [
-			{
-				"c": "ZENLESSGIFT",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 50
-					},
-					{
-						"i": "5/56/Item_Official_Investigator_Log",
-						"n": 2
-					},
-					{
-						"i": "7/7b/Item_W-Engine_Power_Supply",
-						"n": 3
-					},
-					{
-						"i": "1/1b/Item_Bangboo_Algorithm_Module",
-						"n": 1
-					}
-				]
-			},
-			{
-				"c": "ZZZ21SUMMER",
-				"r": [
-					{
-						"i": "4/4c/Item_Polychrome",
-						"n": 60
-					},
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 6666
-					}
-				]
-			},
-			{
-				"c": "YUZUHAGIFT",
-				"r": [
-					{
-						"i": "a/a2/Item_Denny",
-						"n": 10000
-					},
-					{
-						"i": "5/56/Item_Official_Investigator_Log",
-						"n": 10
-					},
-					{
-						"i": "7/7b/Item_W-Engine_Power_Supply",
-						"n": 10
-					},
-					{
-						"i": "7/7a/Item_Crystallized_Plating_Agent",
-						"n": 10
-					}
-				]
-			},
 			{
 				"c": "KRAMPUS",
 				"r": [
@@ -9552,39 +9495,68 @@
 						"n": 2
 					}
 				]
+			},
+			{
+				"c": "ZENLESSGIFT",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 50
+					},
+					{
+						"i": "5/56/Item_Official_Investigator_Log",
+						"n": 2
+					},
+					{
+						"i": "7/7b/Item_W-Engine_Power_Supply",
+						"n": 3
+					},
+					{
+						"i": "1/1b/Item_Bangboo_Algorithm_Module",
+						"n": 1
+					}
+				]
+			},
+			{
+				"c": "ZZZ21SUMMER",
+				"r": [
+					{
+						"i": "4/4c/Item_Polychrome",
+						"n": 60
+					},
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 6666
+					}
+				]
+			},
+			{
+				"c": "YUZUHAGIFT",
+				"r": [
+					{
+						"i": "a/a2/Item_Denny",
+						"n": 10000
+					},
+					{
+						"i": "5/56/Item_Official_Investigator_Log",
+						"n": 10
+					},
+					{
+						"i": "7/7b/Item_W-Engine_Power_Supply",
+						"n": 10
+					},
+					{
+						"i": "7/7a/Item_Crystallized_Plating_Agent",
+						"n": 10
+					}
+				]
 			}
 		]
 	},
 	"wuwa": {
 		"p": "https://static.wikia.nocookie.net/wutheringwaves/images",
 		"s": ".png/revision/latest/scale-to-width-down/20",
-		"v": [
-			{
-				"c": "WUTHERINGGIFT",
-				"r": [
-					{
-						"i": "/1/16/Item_Astrite",
-						"n": 50
-					},
-					{
-						"i": "/d/d6/Item_Premium_Resonance_Potion",
-						"n": 2
-					},
-					{
-						"i": "/8/88/Item_Medium_Revival_Inhaler",
-						"n": 2
-					},
-					{
-						"i": "/9/9b/Item_Medium_Energy_Bag",
-						"n": 2
-					},
-					{
-						"i": "/d/d1/Item_Shell_Credit",
-						"n": 10000
-					}
-				]
-			}
-		],
+		"v": [],
 		"e": [
 			{
 				"c": "ALLEYESONUS",
@@ -10032,6 +10004,31 @@
 					{
 						"i": "/d/d1/Item_Shell_Credit",
 						"n": 20000
+					}
+				]
+			},
+			{
+				"c": "WUTHERINGGIFT",
+				"r": [
+					{
+						"i": "/1/16/Item_Astrite",
+						"n": 50
+					},
+					{
+						"i": "/d/d6/Item_Premium_Resonance_Potion",
+						"n": 2
+					},
+					{
+						"i": "/8/88/Item_Medium_Revival_Inhaler",
+						"n": 2
+					},
+					{
+						"i": "/9/9b/Item_Medium_Energy_Bag",
+						"n": 2
+					},
+					{
+						"i": "/d/d1/Item_Shell_Credit",
+						"n": 10000
 					}
 				]
 			}
