@@ -5846,7 +5846,47 @@
 	"hsr": {
 		"p": "https://static.wikia.nocookie.net/houkai-star-rail/images/",
 		"s": ".png/revision/latest/scale-to-width-down/20",
-		"v": [],
+		"v": [
+			{
+				"c": "PS3QWS3ACGDK",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/0b12bdf76fa4abc6b4d1fdfc0fb4d6f5_4521150989210768295.webp?x-oss-process=image/resize,w_20",
+						"n": 50000
+					}
+				]
+			},
+			{
+				"c": "RSJ9EB2TDGC7",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/508229a94e4fa459651f64c1cd02687a_6307505132287490837.webp?x-oss-process=image/resize,w_20",
+						"n": 5
+					}
+				]
+			},
+			{
+				"c": "MTKQEAJAUZWB",
+				"r": [
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/77cb5426637574ba524ac458fa963da0_6409817950389238658.webp?x-oss-process=image/resize,w_20",
+						"n": 100
+					},
+					{
+						"i": "https://hyl-static-res-prod.hoyolab.com/upload/static-resource-v2/2023/08/04/7cb0e487e051f177d3f41de8d4bbc521_2556290033227986328.webp?x-oss-process=image/resize,w_20",
+						"n": 4
+					}
+				]
+			}
+		],
 		"e": [
 			{
 				"c": "7A324EYX6SHT",
